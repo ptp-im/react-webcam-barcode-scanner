@@ -33,7 +33,7 @@ const BarcodeScannerComponent = ({
   }, []);
 
   return (
-    <Webcam
+    <div className="qrcode-scanner"><Webcam
       width={width}
       height={height}
       ref={webcamRef}
@@ -41,7 +41,7 @@ const BarcodeScannerComponent = ({
       videoConstraints={{
         facingMode: 'environment'
       }}
-    />
+    /></div>
   )
 }
 
